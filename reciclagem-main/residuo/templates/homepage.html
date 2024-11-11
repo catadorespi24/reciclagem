@@ -1,0 +1,101 @@
+{% extends 'base.html' %}
+{% include 'navbar.html' %}
+{% load static %}
+
+{% block titulo %}
+    HomePage SisCol
+{% endblock %}
+
+{% block content %}
+<nav class="w-full flex justify-between items-center py-3 px-4 fixed z-50">
+    <div class="w-6/12">
+        <a href="#">
+            <img class="w-3/12 size-20" src="{% static 'images/Siscol logo.png' %}">
+        </a>
+    </div>
+
+    <div class="w-6/12 flex flex-nowrap justify-end">
+        <div class="mr-3">
+            <a href="#">
+                <button class="text-white bg-gradient-to-r from-green-400 via-green-500 to-green-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-green-300 dark:focus:ring-green-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">
+                    Entrar
+                </button>
+            </a>
+        </div>
+
+        <div class="mr-3">
+            <a href="#">
+                <button class="text-white bg-gradient-to-r from-cyan-400 via-cyan-500 to-cyan-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">
+                    Cadastrar
+                </button>
+            </a>
+        </div>
+    </div>
+</nav>
+
+
+    <header class="min-h-screen bg-green-100 bg-opacity-75 bg-blend-lighten showcase border-gray-600 border-b-8 flex justify-center items-center bg-no-repeat" style="background-image: url('{% static 'images/coleta seletiva.png' %}');">
+        <div class="z-10 h-full py-32 md:py-0 text-green-950 text-center flex items-center flex-col">
+            <h1 class="font-semibold text-4xl md:text-5xl w-10/12 md:w-3/4 text-center">
+                SISCOL - SISTEMA DE COLETA DE RESÍDUOS ELETRÔNICOS EM SÃO BERNARDO DO CAMPO
+            </h1>
+            <h3 class="text-xl md:text-xl py-5">
+                Conectando coletores à tecnologia
+            </h3>
+        </div>
+    </header>
+
+    <section class='flex flex-col bg-green-100 md:flex-row items-center border-gray-900 border-b-8' style="min-height: 70vh;">
+        <div class="md:w-1/2 flex flex-col text-green-950 justify-center text-center md:text-left p-5 md:p-10 ">
+            <h2 class="md:text-5xl text-4xl font-semibold mb-4">
+                Reciclagem.
+            </h2>
+            <h5 class="md:text-xl text-lg">
+                A reciclagem de eletrônicos é fundamental para diminuir ou amenizar os danos causados pela indústria.
+            </h5>
+        </div>
+        <div class='md:w-1/2 flex justify-center items-center'>
+            <img src="{% static 'images/reciclagem.png' %}" class="w-8/12" alt="">
+        </div>
+    </section>
+
+    <section class='flex flex-col bg-green-100 md:flex-row items-center border-gray-900 border-b-8' style="min-height: 70vh;">
+        <div class='md:w-1/2 flex justify-center items-center '>
+            <img src="{% static 'images/Lixo eltronico mundo.png' %}" class="w-8/12" alt="">
+        </div>
+
+        <div class="md:w-1/2 flex flex-col text-green-950 justify-center text-center md:text-left p-5 md:p-10">
+            <h2 class="md:text-5xl text-4xl font-semibold mb-4">
+                O Brasil e o Lixo eletrônico.
+            </h2>
+            <h5 class="md:text-xl text-lg">
+                O Brasil é um dos maiores produtores desse tipo de resíduo no mundo, segundo o levantamento da ONU. No recorte das Américas, o país está na frente do México (1,5 milhão de tonelada) e Canadá (770 mil toneladas).
+            </h5>
+        </div>
+
+    </section>
+
+
+    <section class='flex flex-col bg-green-100 md:flex-row items-center border-gray-900 border-b-8' style="min-height: 70vh;">
+        <div class="md:w-1/2 flex flex-col text-green-950 justify-center text-center md:text-left p-5 md:p-10">
+            <h2 class="md:text-5xl text-4xl font-semibold mb-4">
+                62 milhões de toneladas de resíduos.
+            </h2>
+            <h5 class="md:text-xl text-lg">
+                Esse é o número levantado, de acordo com a quarta edição do Monitor Global de Lixo Eletrônico, GEM, em 2022.
+            </h5>
+        </div>
+        <div class='md:w-1/2 flex justify-center items-center'>
+            <img src="{% static 'images/lixo eletronico.png' %}" class="w-8/12" alt="">
+        </div>
+    </section>
+    <footer class="px-5 py-10 bg-green-100 text-green-950">
+        <ul class="flex justify-between items-center">
+
+            <li>&copy; 2024</li>
+            <li>Univesp</li>
+
+        </ul>
+    </footer>
+
+{% endblock %}
